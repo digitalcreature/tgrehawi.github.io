@@ -17,6 +17,10 @@ body {
 	min-height: 100vh;
 }
 
+span {
+	display: inline-block;
+}
+
 #main {
 	display: inline-block;
 	text-align: justify;
@@ -27,12 +31,42 @@ body {
 	margin-right: 10%;
 }
 
+#header {
+	display: block;
+	background-color: #333333;
+	max-width: 100%;
+	padding: 0px 32px;
+	overflow: auto;
+}
+
+#name {
+	text-align: left;
+	color: #CCCCCC;
+	font-size: 48px;
+}
+
+#nouns {
+	text-align: right;
+	font-size: 24px;
+	padding: 0px 32px;
+	color: #888888;
+}
+
+#links {
+	display: block;
+	background-color: #222222;
+	max-width: 100%;
+	padding: 4px 32px;
+	color: #df2d98;
+}
+
 #footer {
 	text-align: center;
 	padding-bottom: 12px;
 }
 
 #banner {
+	display: block;
 	width: 100%;
 }
 
@@ -43,8 +77,12 @@ p {
 a {
 	color: #8bba75;
 }
+a.linkbar {
+	color:inherit;
+}
 
 h1, h2 {
+	color: #8aee25;
 	padding-top: 16px;
 }
 
