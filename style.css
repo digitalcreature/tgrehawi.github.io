@@ -35,21 +35,24 @@ span {
 	display: block;
 	background-color: #333333;
 	max-width: 100%;
-	padding: 0px 32px;
+	padding: 8px 32px;
 	overflow: auto;
+	vertical-align: middle;
 }
 
 #name {
 	text-align: left;
 	color: #CCCCCC;
 	font-size: 48px;
+	max-width: 100%;
 }
 
 #nouns {
-	text-align: right;
+	text-align: left;
 	font-size: 24px;
-	padding: 0px 32px;
 	color: #888888;
+	max-width: 100%;
+	padding-left: 32px;
 }
 
 #links {
