@@ -59,8 +59,9 @@ span {
 	display: block;
 	background-color: #222222;
 	max-width: 100%;
-	padding: 4px 32px;
-	color: #df2d98;
+	padding: 4px 64px;
+	padding-bottom: 8px;
+	font-size: 20px;
 }
 
 #footer {
@@ -82,7 +83,7 @@ a {
 }
 
 #links a {
-	color: inherit;
+	color: #df2d98;
 }
 
 h1, h2 {
