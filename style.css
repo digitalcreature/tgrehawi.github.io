@@ -77,8 +77,9 @@ p {
 a {
 	color: #8bba75;
 }
-a.linkbar {
-	color:inherit;
+
+#links a {
+	color: inherit;
 }
 
 h1, h2 {
