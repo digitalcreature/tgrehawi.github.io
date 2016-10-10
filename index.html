@@ -6,6 +6,15 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<div id="contact-modal" class="modal">
+			<div class="modal-content">
+				<h1>Contact Info</h1>
+				<p>
+					twitter: <a>@tgrehawi</a>
+				</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
 		<div id="main">
 			<img id="banner" src="tgrehawi_banner.gif">
 			<span id="header">
@@ -15,11 +24,11 @@
 				</span>
 			</span>
 			<span id="links">
-				<a class="linkbar" href="http://twitter.com/tgrehawi/">twitter</a>
-				<a class="linkbar" href="http://github.com/tgrehawi/">github</a>
-				<a class="linkbar" href="http://tgrehawi.itch.io/">itch</a>
-				<a class="linkbar" href="http://tgrehawi.tumblr.com/">blog</a>
-				<a class="linkbar" href="#">contact</a>
+				<a class="linkbar" target="_blank" href="http://twitter.com/tgrehawi/">twitter</a>
+				<a class="linkbar" target="_blank" href="http://github.com/tgrehawi/">github</a>
+				<a class="linkbar" target="_blank" href="http://tgrehawi.itch.io/">itch</a>
+				<a class="linkbar" target="_blank" href="http://tgrehawi.tumblr.com/">blog</a>
+				<a class="linkbar" href="javascript:showmodal('contact-modal')">contact</a>
 			</span>
 			<h1>About</h1>
 			<p>Tanner is a sophomore at George Mason Univeristy studying Computer Science.</p>
