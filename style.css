@@ -107,11 +107,13 @@ span {
 }
 
 .project .thumbcontainer {
-	/*height: 50%;*/
+	display: block;
+	/*position: relative;*/
 	padding: 6px;
 	border-radius: 8px;
 	margin: 4px 0px;
 	background-color: #a78ea6;
+	transition-duration: 0.5s;
 }
 
 .project #thumbnail {
@@ -120,6 +122,11 @@ span {
 	border-radius: 4px;
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.project .thumbcontainer:hover {
+	padding: 0;
+	border-radius: 4px;
 }
 
 .project #title {
