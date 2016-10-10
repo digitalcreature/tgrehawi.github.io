@@ -39,10 +39,16 @@ $(document).ready(function() {
 				var user = p.getAttribute("user") || "tgrehawi";
 				var repo = p.getAttribute("repo");
 				var lang = p.getAttribute("lang") || "";
+				var thumb = p.getAttribute("thumb");
+				thumb = thumb ?
+				`<div class="thumbcontainer"><img id="thumbnail" src="${thumb}" alt="${repo}"></div>` || "" : "";
 				p.innerHTML =
 				`<span id="lang">${lang}</span>
 				<span id="title">${repo}</span>
-				<span> <a target="_blank" href="http://github.com/${user}/${repo}/">github:${user}/${repo}.git</a> </span>
+				<span>
+					<a target="_blank" href="http://github.com/${user}/${repo}/">github:${user}/${repo}.git</a>
+				</span>
+				${thumb}
 				<p>${p.innerHTML}</p>`
 				break;
 		}
