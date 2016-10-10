@@ -71,24 +71,21 @@ span {
 	font-size: 20px;
 }
 
-#footer {
-	text-align: center;
-	padding-bottom: 12px;
-}
-
 #banner {
 	display: block;
 	width: 100%;
 }
 
-.section {
-	text-align: center;
-	padding: 0px 32px;
-	vertical-align: top;
+#about {
+	text-align: left;
 }
 
-#projects.section {
-	font-size: 0px;
+#projects {
+	text-align: left;
+}
+
+#projects #cards {
+	text-align: center;
 }
 
 .project {
@@ -175,14 +172,15 @@ a {
 	color: #df2d98;
 }
 
-h1, h2 {
+h1 {
 	color: #8aee25;
 	padding-top: 16px;
+	padding-left: 32px;
 }
 
-p, h1, h2 {
-	padding-left: 32px;
-	padding-right: 32px;
+p {
+	padding: 0px 64px;
+	padding-top: 8px;
 }
 
 .modal {
