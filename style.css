@@ -30,6 +30,7 @@ span {
 	min-height: 100vh;
 	margin-left: 10%;
 	margin-right: 10%;
+	padding-bottom: 32px;
 }
 
 #header {
