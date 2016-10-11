@@ -180,76 +180,80 @@
 #projects #cards .shadow#top { margin-bottom: 16px; }
 #projects #cards .shadow#bottom { margin-top: 16px; }
 
-.project {
-	display: inline-block;
-	background-color: #cca6ca;
-	border-radius: 8px;
-	text-align: left;
-	padding: 12px;
-	margin: 8px;
-	font-size: 12px;
-	width: 256px;
-	height: 384px;
-	overflow: hidden;
-	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-	transition: 0.5s;
-}
+@media only screen and (min-device-width: 800px) {
 
-.project:hover {
-	transform: scale(1.05);
-}
+	.projectcard {
+		display: inline-block;
+		background-color: #cca6ca;
+		border-radius: 8px;
+		text-align: left;
+		padding: 12px;
+		margin: 8px;
+		font-size: 12px;
+		width: 256px;
+		height: 384px;
+		overflow: hidden;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+		transition: 0.5s;
+	}
 
-.project #thumb {
-	margin: 8px 0px;
-	margin-top: 4px;
-	background-color: #a78ea6;
-}
+	.projectcard:hover {
+		transform: scale(1.05);
+	}
 
-.project #title {
-	color: #49534f;
-	font-weight: bold;
-	font-size: 24px;
-	padding: 0px;
-	margin: 0px;
-}
+	.projectcard #thumb {
+		margin: 8px 0px;
+		margin-top: 4px;
+		background-color: #a78ea6;
+	}
 
-.project #lang {
-	color: #8a878f;
-	float: right;
-	font-size: 24px;
-}
+	.projectcard #title {
+		color: #49534f;
+		font-weight: bold;
+		font-size: 24px;
+		padding: 0px;
+		margin: 0px;
+	}
 
-.project p {
-	color: #5a6360;
-	font-size: 16px;
-	padding: 8px 8px;
-	margin-top: 4px;
-	text-align: justify;
-	background-color: #e3cbe1;
-	border-radius: 12px;
-}
+	.projectcard #lang {
+		color: #8a878f;
+		float: right;
+		font-size: 24px;
+	}
+
+	.projectcard p {
+		color: #5a6360;
+		font-size: 16px;
+		padding: 8px 8px;
+		margin-top: 4px;
+		text-align: justify;
+		background-color: #e3cbe1;
+		border-radius: 12px;
+	}
 
 
-.project #links a {
-	display: block;
-	padding: 2px 4px;
-	margin: 2px 0;
-	overflow: hidden;
-	transition: .1s;
-	width: 100%;
-	border-radius: 8px;
-	color: #df2d98;
-	font-weight: bold;
-	text-decoration: none;
-	font-size: 14px;
-	outline: 0;
-}
+	.projectcard #links a {
+		display: block;
+		padding: 2px 4px;
+		margin: 2px 0;
+		overflow: hidden;
+		transition: .1s;
+		width: 100%;
+		border-radius: 8px;
+		color: #df2d98;
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 14px;
+		outline: 0;
+	}
 
-.project #links a:hover {
-	background-color: #df2d98;
-	color: #d1bed0;
-}
+	.projectcard #links a:hover {
+		background-color: #df2d98;
+		color: #d1bed0;
+	}
 
-.project p a {
-	color: #566e66;
+	.projectcard p a {
+		color: #566e66;
+	}
+
 }
