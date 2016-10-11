@@ -34,55 +34,48 @@
 #banner {
 	display: block;
 	position: relative;
+	margin-top: 128px;
 	width: 100%;
 }
 
 #header {
 	display: block;
-	position: relative;
-	right: 0.5%;
-	width: 101%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
 	z-index: 1;
-	display: block;
 	background-color: #222222;
-	padding-top: 24px;
-	position: relative;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-	border-radius: 3px;
 }
 
 #header #title {
-	right: 0.5%;
-	width: 101%;
 	text-align: left;
 	display: block;
 	position: relative;
-	border-radius: 2px;
 	z-index: 1;
 	background-color: #333333;
-	padding: 8px 3%;
+	padding: 8px;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 #header #title #name {
-	display: inline-block;
-	text-align: left;
+	display: block;
+	text-align: center;
 	color: #dcf0cf;
 	font-size: 48px;
 	font-weight: bold;
-	max-width: 100%;
+	width: 100%;
 	white-space: nowrap;
 }
 
 #header #title #nouns {
-	display: inline-block;
+	display: block;
 	overflow: hidden;
-	text-align: left;
+	text-align: center;
 	font-size: 24px;
 	color: #89a69e;
-	max-width: 100%;
-	padding-left: 5%;
-	/*vertical-align: super;*/
+	width: 100%;
 	white-space: nowrap;
 }
 
@@ -90,7 +83,7 @@
 	padding: 0px 4%;
 	font-size: 0;
 	/*overflow: hidden;*/
-	text-align: left;
+	text-align: center;
 	height: auto;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -261,6 +254,96 @@
 }
 
 @media only screen and (min-device-width: 800px) {
+
+	#banner {
+		margin-top: 0;
+	}
+
+	#header {
+		display: block;
+		position: relative;
+		right: 0.5%;
+		width: 101%;
+		z-index: 1;
+		background-color: #222222;
+		padding-top: 24px;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+		border-radius: 3px;
+	}
+
+	#header #title {
+		right: 0.5%;
+		width: 101%;
+		text-align: left;
+		display: block;
+		position: relative;
+		border-radius: 2px;
+		z-index: 1;
+		background-color: #333333;
+		padding: 8px 3%;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	}
+
+	#header #title #name {
+		display: inline-block;
+		text-align: left;
+		color: #dcf0cf;
+		font-size: 48px;
+		font-weight: bold;
+		max-width: 100%;
+		white-space: nowrap;
+	}
+
+	#header #title #nouns {
+		display: inline-block;
+		overflow: hidden;
+		text-align: left;
+		font-size: 24px;
+		color: #89a69e;
+		max-width: 100%;
+		padding-left: 5%;
+		/*vertical-align: super;*/
+		white-space: nowrap;
+	}
+
+	#header #links {
+		padding: 0px 4%;
+		font-size: 0;
+		/*overflow: hidden;*/
+		text-align: left;
+		height: auto;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		height: 48px;
+	}
+
+	#header #links .fa {
+		margin-right: 6px;
+		font-size: 24px;
+	}
+
+	#header #links a {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+		color: #df2d98;
+		background-color: transparent;
+		padding: 10px 1.25%;
+		height: inherit;
+		transition: 0.1s;
+		text-decoration: none;
+		outline: 0;
+		position: relative;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+
+	#header #links a:hover {
+		color: #c9d9c3;
+		background-color: #df2d98;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+		transform: scale(1.1);
+	}
 
 	.projectcard {
 		display: inline-block;
