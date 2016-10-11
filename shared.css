@@ -20,10 +20,6 @@ body {
 	min-width: 640px;
 }
 
-span {
-	display: inline-block;
-}
-
 div.imgcontainer {
 	display: block;
 	padding: 6px;
@@ -63,4 +59,8 @@ div.imgcontainer:hover {
 	margin: 10% 25%;
 	padding-bottom: 32px;
 	max-height: 100%;
+}
+
+.fa {
+	margin-right: 4px;
 }

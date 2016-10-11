@@ -43,11 +43,11 @@ $(document).ready(function() {
 				thumb = thumb ?
 				`<div class="imgcontainer" id="thumb"><img src="${thumb}" alt="${repo}" title="${repo}"></div>` || "" : "";
 				p.innerHTML =
-				`<span id="lang">${lang}</span>
-				<span id="title">${repo}</span>
-				<span id="link">
-					<a target="_blank" href="http://github.com/${user}/${repo}/">github:${user}/${repo}.git</a>
-				</span>
+				`<div id="lang">${lang}</div>
+				<div id="title">${repo}</div>
+				<div id="link">
+					<a target="_blank" href="http://github.com/${user}/${repo}/"><i class="fa fa-github-alt fa-lg" aria-label="github page"> </i>${user}/${repo}</a>
+				</div>
 				${thumb}
 				<p>${p.innerHTML}</p>`
 				break;
