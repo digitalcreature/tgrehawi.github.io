@@ -41,7 +41,7 @@ $(document).ready(function() {
 				var lang = p.getAttribute("lang") || "";
 				var thumb = p.getAttribute("thumb");
 				thumb = thumb ?
-				`<div class="thumbcontainer"><img id="thumbnail" src="${thumb}" alt="${repo}"></div>` || "" : "";
+				`<div class="imgcontainer" id="thumb"><img src="${thumb}" alt="${repo}"></div>` || "" : "";
 				p.innerHTML =
 				`<span id="lang">${lang}</span>
 				<span id="title">${repo}</span>

@@ -1,0 +1,202 @@
+@import url("shared.css");
+
+#main {
+	display: block;
+	text-align: justify;
+	background-color: #194D43;
+	max-width: 1280px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding-bottom: 32px;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+#banner {
+	background-image: url("tgrehawi_banner.gif");
+	display: block;
+	width: 100%;
+	height: 380px;
+	background-size: 1280px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top center;
+	text-align: right;
+}
+
+#header {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	/*text-shadow: 0 0 3px rgba(0, 0, 0, 1);*/
+}
+
+#header #title {
+	display: block;
+	position: relative;
+	z-index: 1;
+	background-color: #333333;
+	max-width: 100%;
+	padding: 8px 32px;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+	text-align: left;
+	color: #CCCCCC;
+	font-size: 48px;
+	font-weight: bold;
+	max-width: 100%;
+}
+
+#nouns {
+	text-align: left;
+	font-size: 24px;
+	color: #888888;
+	max-width: 100%;
+	padding-left: 32px;
+}
+
+#links {
+	display: block;
+	background-color: #222222;
+	max-width: 100%;
+	padding: 0px 64px;
+	font-size: 0;
+	overflow: hidden;
+}
+
+#links a {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	color: #df2d98;
+	background-color: transparent;
+	padding: 4px 8px;
+	padding-bottom: 8px;
+	height: 100%;
+	transition: 0.1s;
+	text-decoration: none;
+}
+
+#links a:hover {
+	color: #c9d9c3;
+	background-color: #df2d98;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#main .section {
+	padding: 16px 0;
+}
+
+#about {
+	text-align: justify;
+	overflow: hidden;
+}
+
+#face {
+	float: right;
+	width: 25%;
+	min-width: 192px;
+	background-color: #b8a1b7;
+	margin-top: 32px;
+	margin-left: 32px;
+	margin-right: 5%;
+	margin-bottom: 16px;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#face img {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#projects {
+	text-align: left;
+}
+
+#projects #cards {
+	text-align: center;
+	background-color: #192f2b;
+	margin: 16px 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#projects #cards .shadow {
+	display: block;
+	width: 100%;
+	background-color: #194D43;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#projects #cards .shadow#top { margin-bottom: 16px; }
+#projects #cards .shadow#bottom { margin-top: 16px; }
+
+.project {
+	display: inline-block;
+	background-color: #d1bed0;
+	border-radius: 4px;
+	text-align: left;
+	padding: 16px;
+	margin: 8px;
+	font-size: 12px;
+	width: 256px;
+	/*max-width: 512px;*/
+	height: 384px;
+	overflow: hidden;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.project #thumb {
+	margin: 4px 0px;
+	background-color: #a78ea6;
+}
+
+.project #title {
+	color: #49534f;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.project #lang {
+	color: #8a878f;
+	float: right;
+	font-size: 24px;
+}
+
+.project span {
+	display: block;
+}
+
+.project p {
+	color: #5a6360;
+	font-size: 16px;
+	padding: 4px;
+	margin: 0px;
+	text-align: justify;
+}
+
+.project a {
+	margin-left: 8px;
+	color: #df2d98;
+}
+
+.project p a {
+	color: #566e66;
+}
+
+h1 {
+	color: #8aee25;
+	padding-left: 5%;
+}
+
+p {
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 8px;
+}
+
+a {
+	color: #8bba75;
+}

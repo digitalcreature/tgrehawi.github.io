@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>tgrehawi</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="icon" href="favicon.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="script.js"></script>
@@ -18,7 +18,8 @@
 			</div>
 		</div>
 		<div id="main">
-			<img id="banner" src="tgrehawi_banner.gif">
+			<div id="banner">
+			</div>
 			<div id="header">
 				<div id="title">
 					<span id="name">Tanner Grehawick</span>
@@ -35,7 +36,10 @@
 					<!-- <a href="javascript:showmodal('contact-modal')">contact</a> -->
 				</span>
 			</div>
-			<div id="about">
+			<div id="about" class="section">
+				<div id="face" class="imgcontainer">
+					<img src="favicon.png">
+				</div>
 				<h1>About</h1>
 				<p>
 					Hello! My name is Tanner Grehawick. I am a sophomore at
@@ -43,14 +47,19 @@
 					<br> I love getting my hands dirty with
 					random scraps of code and geometry.
 				</p>
+				<br>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
 			</div>
-			<div id="projects">
+			<div id="projects" class="section">
 				<h1>Projects</h1>
 				<p>
 					I have too many projects and too little time;
 					<br>I want to share them with you.
 				</p>
 				<div id="cards">
+					<div class="shadow" id="top"></div>
 					<span class="project" source="github" repo="ccalc" lang="C">
 						A simple command-line calculator I wrote in an hour or two one weekend to experiment with lexical parsing.
 						Respects full order of operations.
@@ -64,6 +73,7 @@
 						A raycaster I wrote using nothing but Lua and LOVE2D over the course of 2 weeks for
 						<a target="_blank" href="https://itch.io/jam/lowrezjam2016">#LOWREZJAM2016</a>.
 					</span>
+					<div class="shadow" id="bottom"></div>
 				</div>
 			</div>
 			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
