@@ -9,7 +9,6 @@
 	margin: 0 auto;
 	padding-bottom: 32px;
 	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
 }
 
 #main .section {
@@ -18,13 +17,14 @@
 
 #main .section > h1 {
 	color: #8aee25;
-	padding-left: 5%;
+	padding-left: 4%;
 }
 
 #main .section > p {
-	padding-left: 7%;
-	padding-right: 7%;
+	padding-left: 6%;
+	padding-right: 6%;
 	padding-top: 8px;
+	font-size: 18px;
 }
 
 #main .section > a {
@@ -39,9 +39,10 @@
 
 #header {
 	display: block;
-	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
+	left: -1%;
+	width: 102%;
 	z-index: 1;
 }
 
@@ -50,7 +51,7 @@
 	position: relative;
 	z-index: 1;
 	background-color: #333333;
-	max-width: 100%;
+	width: 100%;
 	padding: 8px 3%;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
@@ -74,11 +75,14 @@
 #links {
 	display: block;
 	background-color: #222222;
-	max-width: 100%;
+	width: 99%;
+	position: relative;
+	left: 0.5%;
 	padding: 0px 8%;
 	font-size: 0;
 	overflow: hidden;
 	text-align: left;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 #links a {
@@ -87,7 +91,7 @@
 	font-weight: bold;
 	color: #df2d98;
 	background-color: transparent;
-	padding: 4px 1%;
+	padding: 4px 1.5%;
 	padding-bottom: 8px;
 	height: 100%;
 	transition: 0.1s;
@@ -101,19 +105,19 @@
 }
 
 #about {
-	text-align: justify;
+	text-align: left;
 	overflow: hidden;
 }
 
-#face {
+#about #face {
 	float: right;
 	width: 25%;
-	min-width: 192px;
+	min-width: 212px;
 	background-color: #b8a1b7;
 	margin-top: 32px;
-	margin-left: 32px;
+	margin-left: 3%;
 	margin-right: 5%;
-	margin-bottom: 16px;
+	margin-bottom: 1%;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -126,6 +130,7 @@
 }
 
 #projects #cards {
+	display: block;
 	text-align: center;
 	background-color: #192f2b;
 	margin: 16px 0;
@@ -159,7 +164,7 @@
 }
 
 .project:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .project #thumb {
@@ -200,6 +205,12 @@
 
 .project #link a {
 	color: #df2d98;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.project #link a:hover {
+	text-decoration: underline;
 }
 
 .project #link a:before {
@@ -208,7 +219,7 @@
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
-	padding-right: 4px;
+	padding-right: 3px;
 	position: relative;
 	background-size: contain;
 	background-position: left middle;
