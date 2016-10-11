@@ -45,8 +45,10 @@ $(document).ready(function() {
 				p.innerHTML =
 				`<div id="lang">${lang}</div>
 				<div id="title">${repo}</div>
-				<div id="link">
-					<a target="_blank" href="http://github.com/${user}/${repo}/"><i class="fa fa-github-alt fa-lg" aria-label="github page"> </i>${user}/${repo}</a>
+				<div id="links">
+					<a target="_blank" href="http://github.com/${user}/${repo}/">
+							<i class="fa fa-github-alt fa-lg" aria-label="github page"> </i>${user}/${repo}
+					</a>
 				</div>
 				${thumb}
 				<p>${p.innerHTML}</p>`

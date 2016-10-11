@@ -39,20 +39,27 @@
 
 #header {
 	display: block;
-	/*overflow: hidden;*/
 	position: relative;
-	left: -1%;
-	width: 102%;
+	right: 0.5%;
+	width: 101%;
 	z-index: 1;
+	display: block;
+	background-color: #222222;
+	padding-top: 24px;
+	position: relative;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
 }
 
 #header #title {
+	right: 0.5%;
+	width: 101%;
 	text-align: left;
 	display: block;
 	position: relative;
+	border-radius: 2px;
 	z-index: 1;
 	background-color: #333333;
-	width: 100%;
 	padding: 8px 3%;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
@@ -79,24 +86,15 @@
 	white-space: nowrap;
 }
 
-#header .bar {
-	display: block;
-	background-color: #222222;
-	height: 24px;
-	width: 99%;
-	position: relative;
-	left: 0.5%;
-	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-}
-
 #header #links {
 	padding: 0px 4%;
 	font-size: 0;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	text-align: left;
 	height: auto;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	height: 48px;
 }
 
 #header #links .fa {
@@ -104,22 +102,27 @@
 	font-size: 24px;
 }
 
-#links a {
+#header #links a {
 	display: inline-block;
 	font-size: 20px;
 	font-weight: bold;
 	color: #df2d98;
 	background-color: transparent;
-	padding: 8px 1.25%;
-	height: 100%;
+	padding: 10px 1.25%;
+	height: inherit;
 	transition: 0.1s;
 	text-decoration: none;
+	outline: 0;
+	position: relative;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 
-#links a:hover {
+#header #links a:hover {
 	color: #c9d9c3;
 	background-color: #df2d98;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	transform: scale(1.1);
 }
 
 #about {
@@ -179,10 +182,10 @@
 
 .project {
 	display: inline-block;
-	background-color: #d1bed0;
+	background-color: #cca6ca;
 	border-radius: 8px;
 	text-align: left;
-	padding: 16px;
+	padding: 12px;
 	margin: 8px;
 	font-size: 12px;
 	width: 256px;
@@ -198,7 +201,7 @@
 
 .project #thumb {
 	margin: 8px 0px;
-	margin-bottom: 0px;
+	margin-top: 4px;
 	background-color: #a78ea6;
 }
 
@@ -219,37 +222,32 @@
 .project p {
 	color: #5a6360;
 	font-size: 16px;
-	padding: 4px;
-	margin: 0px;
+	padding: 8px 8px;
+	margin-top: 4px;
 	text-align: justify;
+	background-color: #e3cbe1;
+	border-radius: 12px;
 }
 
-.project #link {
+
+.project #links a {
 	display: block;
 	padding: 2px 4px;
-	margin: 1px 0;
+	margin: 2px 0;
 	overflow: hidden;
 	transition: .1s;
 	width: 100%;
-	border-radius: 4px;
-}
-
-.project #link a {
+	border-radius: 8px;
 	color: #df2d98;
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 14px;
-	transition: inherit;
+	outline: 0;
 }
 
-.project #link:hover {
+.project #links a:hover {
 	background-color: #df2d98;
-	/*box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);*/
-}
-
-.project #link:hover a {
-	color: #c9d9c3;
-	/*text-decoration: underline;*/
+	color: #d1bed0;
 }
 
 .project p a {
