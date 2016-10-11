@@ -195,6 +195,7 @@
 
 .project #link {
 	margin-bottom: 8px;
+	overflow: hidden;
 }
 
 .project #link a {
