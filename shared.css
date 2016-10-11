@@ -7,7 +7,7 @@
 }
 
 html {
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 	color: #64B22D;
 	font-family: 'Source Code Pro', monospace;
 	text-align: center;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	padding: 0 5%;
 	min-width: 640px;
 }
