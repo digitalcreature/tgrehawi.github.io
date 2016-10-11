@@ -33,7 +33,7 @@ $(document).ready(function() {
 	});
 	$(".modal .modal-content").click(listeners.absorb);
 
-	$(".projectcard").each(function(_, p) {
+	$(".projectcard").each(function(i, p) {
 		switch (p.getAttribute("source")) {
 			case "github":
 				var user = p.getAttribute("user") || "tgrehawi";

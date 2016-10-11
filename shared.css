@@ -34,6 +34,7 @@ div.imgcontainer img {
 	width: 100%;
 	height: auto;
 	transition: inherit;
+	background-color: rgba(0, 0, 0, 0.5); 
 }
 
 div.imgcontainer:hover {
