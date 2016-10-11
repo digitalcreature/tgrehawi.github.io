@@ -56,23 +56,24 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#name {
+#header #title #name {
 	text-align: left;
-	color: #CCCCCC;
+	color: #dcf0cf;
 	font-size: 48px;
 	font-weight: bold;
 	max-width: 100%;
 }
 
-#nouns {
+#header #title #nouns {
 	text-align: left;
 	font-size: 24px;
-	color: #888888;
+	color: #89a69e;
 	max-width: 100%;
 	padding-left: 5%;
+	vertical-align: super;
 }
 
-#links {
+#header #links, #header #bar {
 	display: block;
 	background-color: #222222;
 	width: 99%;
@@ -83,6 +84,10 @@
 	overflow: hidden;
 	text-align: left;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#header #bar {
+	height: 24px;
 }
 
 #links a {
