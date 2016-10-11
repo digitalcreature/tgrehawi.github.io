@@ -118,11 +118,22 @@
 	margin-left: 3%;
 	margin-right: 5%;
 	margin-bottom: 1%;
+	padding: 12px;
+	border-radius: 18px;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#face img {
+#about #face:hover {
+	padding: 6px;
+	border-radius: 12px;
+}
+
+#about #face img {
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#about #face:hover img {
+	box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #projects {

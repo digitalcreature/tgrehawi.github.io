@@ -45,10 +45,6 @@ div.imgcontainer:hover {
 	border-radius: 6px;
 }
 
-div.imgcontainer:hover img {
-	box-shadow: none;
-}
-
 .modal {
 	display: none;
 	position: fixed;
