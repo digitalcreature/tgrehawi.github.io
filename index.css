@@ -12,6 +12,25 @@
 	overflow: hidden;
 }
 
+#main .section {
+	padding: 16px 0;
+}
+
+#main .section > h1 {
+	color: #8aee25;
+	padding-left: 5%;
+}
+
+#main .section > p {
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-top: 8px;
+}
+
+#main .section > a {
+	color: #8bba75;
+}
+
 #banner {
 	display: block;
 	position: relative;
@@ -77,10 +96,6 @@
 	color: #c9d9c3;
 	background-color: #df2d98;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-}
-
-#main .section {
-	padding: 16px 0;
 }
 
 #about {
@@ -172,26 +187,11 @@
 	text-align: justify;
 }
 
-.project a {
+.project #link a {
 	margin-left: 8px;
 	color: #df2d98;
 }
 
 .project p a {
 	color: #566e66;
-}
-
-h1 {
-	color: #8aee25;
-	padding-left: 5%;
-}
-
-p {
-	padding-left: 7%;
-	padding-right: 7%;
-	padding-top: 8px;
-}
-
-a {
-	color: #8bba75;
 }

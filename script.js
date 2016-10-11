@@ -45,7 +45,7 @@ $(document).ready(function() {
 				p.innerHTML =
 				`<span id="lang">${lang}</span>
 				<span id="title">${repo}</span>
-				<span>
+				<span id="link">
 					<a target="_blank" href="http://github.com/${user}/${repo}/">github:${user}/${repo}.git</a>
 				</span>
 				${thumb}
