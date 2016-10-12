@@ -48,7 +48,7 @@
 #main > #header #title #name {
 	display: block;
 	text-align: center;
-	color: #f0cfe8;
+	color: #ebebeb;
 	font-size: 64px;
 	font-weight: bold;
 	width: 100%;
@@ -60,7 +60,7 @@
 	overflow: hidden;
 	text-align: center;
 	font-size: 36px;
-	color: rgba(219, 190, 218, 0.68);
+	color: #959595;
 	width: 100%;
 	white-space: nowrap;
 }
