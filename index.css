@@ -36,8 +36,8 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#main > .fa-bars {
-	position: fixed;
+#main > #header .fa-bars {
+	position: absolute;
 	z-index: 2;
 	text-decoration: none;
 	text-align: left;
@@ -46,6 +46,26 @@
 	left: 18px;
 	font-size: 52px;
 	margin-right: -16px;
+}
+
+#main > #header #menu {
+	overflow: hidden;
+	height: auto;
+	max-height: 0;
+	transition: 1s;
+}
+
+#main > #header:hover #menu {
+	max-height: 256px;
+}
+
+#main > #header #menu * {
+	display: block;
+	font-size: 36px;
+	color: white;
+	padding: 8px 16px;
+	height: 64px;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 #main > #header #title {
@@ -307,6 +327,10 @@
 		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 		border-radius: 3px;
 		overflow: visible;
+	}
+
+	#main > #header #menu {
+		display: none;
 	}
 
 	#main > #header #title {
