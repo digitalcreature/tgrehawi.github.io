@@ -177,13 +177,13 @@
 
 .projectcard {
 	display: block;
-	background-color: #cca6ca;
+	background-color: #e3cbe1;
 	text-align: left;
 	overflow: hidden;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-	border-radius: 32px;
+	border-radius: 16px;
 	padding: 24px;
-	padding-top: 8px;
+	padding-top: 16px;
 	margin: 32px 5%;
 	width: 90%;
 	height: auto;
@@ -192,18 +192,16 @@
 .projectcard #thumb {
 	margin: 16px 0px;
 	margin-top: 4px;
-	padding: 16px;
+	padding: 12px;
 	background-color: #a78ea6;
-	border-radius: 32px;
-}
-
-.projectcard #thumb * {
 	border-radius: 16px;
 }
 
-.projectcard #thumb:hover {
-	padding: 8px;
-	border-radius: 24px;
+.projectcard #thumb * {
+	display: block;
+	border-radius: 4px;
+	width: 100%;
+	height: auto;
 }
 
 .projectcard #title {
@@ -221,12 +219,12 @@
 }
 
 .projectcard p {
+	background-color: #cca6ca;
 	color: #5a6360;
 	font-size: 32px;
 	padding: 16px;
 	margin-top: 4px;
 	text-align: left;
-	background-color: #e3cbe1;
 	border-radius: 12px;
 }
 
@@ -339,7 +337,6 @@
 		height: inherit;
 		transition: 0.1s;
 		text-decoration: none;
-
 		position: relative;
 		border-bottom-left-radius: 2px;
 		border-bottom-right-radius: 2px;
@@ -380,30 +377,27 @@
 		display: block;
 		padding: 2px 4px;
 		margin: 2px 0;
-		border-radius: 8px;
+		border-radius: 10px;
 		font-size: 14px;
 	}
 
 	.projectcard p {
+		display: block;
 		font-size: 16px;
 		padding: 8px 8px;
 		margin-top: 4px;
-		border-radius: 12px;
+		border-radius: 10px;
+		float left;
 	}
 
 	.projectcard #thumb {
 		margin: 8px 0px;
 		margin-top: 4px;
-		padding: 6px;
-		border-radius: 12px;
+		padding: 4px;
+		border-radius: 10px;
 	}
 
 	.projectcard #thumb * {
-		border-radius: 6px;
-	}
-
-	.projectcard #thumb:hover {
-		padding: 0;
 		border-radius: 6px;
 	}
 

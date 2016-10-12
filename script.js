@@ -41,7 +41,7 @@ $(document).ready(function() {
 				var lang = p.getAttribute("lang") || "";
 				var thumb = p.getAttribute("thumb");
 				thumb = thumb ?
-				`<div class="imgcontainer" id="thumb">
+				`<div id="thumb">
 					<video autoplay="autoplay" loop="loop">
 						<source src="${thumb}" type="video/mp4">
 					</video>
