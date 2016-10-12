@@ -46,6 +46,7 @@
 	left: 18px;
 	font-size: 52px;
 	margin-right: -16px;
+	cursor: pointer;
 }
 
 #main > #header #menu {
