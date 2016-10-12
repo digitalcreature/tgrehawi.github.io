@@ -5,33 +5,16 @@
 	text-align: justify;
 	background-color: #194D43;
 	max-width: 1280px;
-	/*min-height: 100vh;*/
 	margin: 0 auto;
 	padding-bottom: 32px;
 	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-#main .section {
-	padding: 16px 0;
-}
-
-#main .section > h1 {
-	color: #8aee25;
-	padding-left: 4%;
-}
-
-#main .section > p {
-	padding-left: 6%;
-	padding-right: 6%;
-	padding-top: 8px;
-	font-size: 18px;
 }
 
 #main .section > a {
 	color: #8bba75;
 }
 
-#banner {
+#main > #banner {
 	display: block;
 	position: relative;
 	margin-top: 128px;
@@ -117,43 +100,50 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#about {
+
+#main .section {
+	padding: 16px 0;
+}
+
+#main .section > h1 {
+	color: #8aee25;
+	padding: 0 3%;
+	font-size: 48px;
+}
+
+#main .section > p {
+	padding: 0 4%;
+	padding-top: 8px;
+	font-size: 36px;
+}
+
+#main > #about {
 	text-align: left;
 	overflow: hidden;
 }
 
-#about #face {
-	float: right;
-	width: 25%;
-	min-width: 212px;
+#main > #about #face {
+	display: block;
+	width: 60%;
 	background-color: #b8a1b7;
-	margin-top: 32px;
-	margin-left: 32px;
-	margin-right: 5%;
-	margin-bottom: 16px;
-	padding: 12px;
-	border-radius: 18px;
+	margin: 16px 20%;
+	padding: 8px;
+	border-radius: 14px;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#about #face:hover {
-	padding: 6px;
-	border-radius: 12px;
-}
-
-#about #face img {
+#main > #about #face img {
+	display: block;
+	width: 100%;
+	border-radius: 6px;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#about #face:hover img {
-	box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-#projects {
+#main > #projects {
 	text-align: left;
 }
 
-#projects #cards {
+#main > #projects #cards {
 	display: block;
 	text-align: center;
 	background-color: #192f2b;
@@ -162,15 +152,15 @@
 	overflow: hidden;
 }
 
-#projects #cards .shadow {
+#main > #projects #cards .shadow {
 	display: block;
 	width: 100%;
 	background-color: #194D43;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#projects #cards .shadow#top { margin-bottom: 16px; }
-#projects #cards .shadow#bottom { margin-top: 16px; }
+#main > #projects #cards .shadow#top { margin-bottom: 16px; }
+#main > #projects #cards .shadow#bottom { margin-top: 16px; }
 
 .projectcard {
 	display: block;
@@ -222,12 +212,12 @@
 	padding: 6px 8px;
 	margin: 8px 0;
 	overflow: hidden;
-	transition: .1s;
+	transition: .5s;
 	width: 100%;
 	color: #df2d98;
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 28px;
+	font-size: 32px;
 	border-radius: inherit;
 }
 
@@ -237,7 +227,7 @@
 }
 
 .projectcard #links .fa {
-	font-size: 40px;
+	font-size: 48px;
 	transition: inherit;
 	margin-right: 10px;
 }
@@ -262,7 +252,7 @@
 .projectcard p {
 	background-color: #cca6ca;
 	color: #5a6360;
-	font-size: 32px;
+	font-size: 36px;
 	padding: 16px;
 	text-align: left;
 	margin-bottom: 0;
@@ -274,7 +264,7 @@
 
 @media only screen and (min-device-width: 800px) {
 
-	#banner {
+	#main > #banner {
 		margin-top: 0;
 		width: 100%;
 		right: 0;
@@ -370,6 +360,29 @@
 		/*transform: scale(1.1);*/
 	}
 
+	#main .section > h1 {
+		color: #8aee25;
+		padding-left: 4%;
+		font-size: 32px;
+	}
+
+	#main .section > p {
+		padding: 0 6%;
+		padding-top: 8px;
+		font-size: 18px;
+	}
+
+	#main > #about #face {
+		display: inline-block;
+		float: right;
+		width: 30%;
+		min-width: 256px;
+		margin-top: 32px;
+		margin-bottom: 16px;
+		margin-left: 32px;
+		margin-right: 5%;
+	}
+
 	.projectcard {
 		display: inline-block;
 		border-radius: 8px;
@@ -388,9 +401,6 @@
 	.projectcard > *:not(#header) {
 		border-radius: 10px;
 		margin: 6px 10px;
-	}
-
-	.projectcard #header {
 	}
 
 	.projectcard #title {
@@ -415,12 +425,6 @@
 		bottom: 0px;
 	}
 
-	.projectcard #links a:hover {
-		background-color: #df2d98;
-		color: #f6dbf5;
-		width: 100%;
-	}
-
 	.projectcard #links a {
 		display: block;
 		padding: 3px 6px;
@@ -431,6 +435,12 @@
 		white-space: nowrap;
 		transition-duration: 0.5s;
 		transition-timing-function: ease;
+	}
+
+	.projectcard #links a:hover {
+		background-color: #df2d98;
+		color: #f6dbf5;
+		width: 100%;
 	}
 
 	.projectcard #thumb {
