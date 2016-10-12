@@ -63,6 +63,28 @@ $(document).ready(function() {
 		}
 	});
 
+	var $menu = $("#main > #header #menu").first();
+	var menuopen = false;
+
+	function openmenu() {
+		$menu.css("max-height", 256);
+		menuopen = true;
+	}
+
+	function closemenu() {
+		$menu.css("max-height", 0);
+		menuopen = false;
+	}
+
+	togglemenu = function() {
+		if (menuopen) {
+			closemenu();
+		}
+		else {
+			openmenu();
+		}
+	}
+
 	// headerTop = $("#header").offset().top;
 	//
 	// $(window).scroll(function() {
