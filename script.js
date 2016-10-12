@@ -42,14 +42,16 @@ $(document).ready(function() {
 				var thumb = p.getAttribute("thumb");
 				thumb = thumb ?
 				`<div id="thumb">
-					<video autoplay="autoplay" loop="loop">
+					<video autoplay loop muted>
 						<source src="${thumb}" type="video/mp4">
 					</video>
 				</div>`
 				|| "" : "";
-				p.innerHTML =
-				`<div id="lang">${lang}</div>
-				<div id="title">${repo}</div>
+				p.innerHTML = `
+				<div id="header">
+					<div id="lang">${lang}</div>
+					<div id="title">${repo}</div>
+				</div>
 				<div id="links">
 					<a target="_blank" href="http://github.com/${user}/${repo}/">
 							<i class="fa fa-github-alt fa-lg" aria-label="github page"> </i>${user}/${repo}

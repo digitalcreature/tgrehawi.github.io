@@ -41,7 +41,7 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#header {
+#main > #header {
 	display: block;
 	position: fixed;
 	right: 0;
@@ -52,7 +52,7 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#header #title {
+#main > #header #title {
 	text-align: left;
 	display: block;
 	position: relative;
@@ -62,7 +62,7 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-#header #title #name {
+#main > #header #title #name {
 	display: block;
 	text-align: center;
 	color: #dcf0cf;
@@ -72,7 +72,7 @@
 	white-space: nowrap;
 }
 
-#header #title #nouns {
+#main > #header #title #nouns {
 	display: block;
 	overflow: hidden;
 	text-align: center;
@@ -82,7 +82,7 @@
 	white-space: nowrap;
 }
 
-#header #links {
+#main > #header #links {
 	padding: 0;
 	font-size: 0;
 	/*overflow: hidden;*/
@@ -93,12 +93,12 @@
 	height: 48px;
 }
 
-#header #links .fa {
+#main > #header #links .fa {
 	margin-right: 6px;
 	font-size: 24px;
 }
 
-#header #links a {
+#main > #header #links a {
 	display: inline-block;
 	font-size: 20px;
 	font-weight: bold;
@@ -111,7 +111,7 @@
 	position: relative;
 }
 
-#header #links a:hover {
+#main > #header #links a:hover {
 	color: #c9d9c3;
 	background-color: #df2d98;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
@@ -179,38 +179,48 @@
 	overflow: hidden;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 16px;
-	padding: 24px;
-	padding-top: 16px;
+	/*padding: 24px;*/
+	/*padding-top: 16px;*/
 	margin: 32px 5%;
 	width: 90%;
 	height: auto;
 }
 
-.projectcard > * {
+.projectcard > *:not(#header) {
 	border-radius: 12px;
-	margin: 16px 0;
+	margin: 16px;
+}
+
+.projectcard #header {
+	display: block;
+	width: 100%;
+	background-color: #964a92;
+	padding: 8px 16px;
 }
 
 .projectcard #title {
-	color: #49534f;
+	color: #e1f2eb;
 	font-weight: bold;
 	font-size: 48px;
 	padding: 0;
-	margin: 0;
+	width: 100%;
 }
 
 .projectcard #lang {
-	color: #8a878f;
+	color: #c9e7dd80;
 	float: right;
 	font-size: 48px;
 	padding: 0;
 	margin: 0;
 }
 
+.projectcard #links {
+}
+
 .projectcard #links a {
 	display: block;
-	padding: 6px 12px;
-	margin-top: 0px;
+	padding: 6px 8px;
+	margin: 8px 0;
 	overflow: hidden;
 	transition: .1s;
 	width: 100%;
@@ -226,8 +236,18 @@
 	color: #f6dbf5;
 }
 
+.projectcard #links .fa {
+	font-size: 40px;
+	transition: inherit;
+	margin-right: 10px;
+}
+
+.projectcard #links .fa-github-alt {
+	position: relative;
+	bottom: 1px;
+}
+
 .projectcard #thumb {
-	margin: 16px 0px;
 	padding: 8px;
 	background-color: #a78ea6;
 }
@@ -262,7 +282,7 @@
 		border-radius: 0;
 	}
 
-	#header {
+	#main > #header {
 		display: block;
 		position: relative;
 		right: 0.5%;
@@ -274,7 +294,7 @@
 		border-radius: 3px;
 	}
 
-	#header #title {
+	#main > #header #title {
 		right: 0.5%;
 		width: 101%;
 		text-align: center;
@@ -287,7 +307,7 @@
 		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 	}
 
-	#header #title #name {
+	#main > #header #title #name {
 		display: inline-block;
 		text-align: left;
 		color: #dcf0cf;
@@ -298,7 +318,7 @@
 		white-space: nowrap;
 	}
 
-	#header #title #nouns {
+	#main > #header #title #nouns {
 		display: inline-block;
 		overflow: hidden;
 		text-align: left;
@@ -311,7 +331,7 @@
 		white-space: nowrap;
 	}
 
-	#header #links {
+	#main > #header #links {
 		padding: 0;
 		font-size: 0;
 		overflow: visible;
@@ -320,12 +340,12 @@
 		height: 40px;
 	}
 
-	#header #links .fa {
+	#main > #header #links .fa {
 		margin-right: 6px;
 		font-size: 24px;
 	}
 
-	#header #links a {
+	#main > #header #links a {
 		display: inline-block;
 		font-size: 20px;
 		font-weight: bold;
@@ -341,7 +361,7 @@
 		height: 0%;
 	}
 
-	#header #links a:hover {
+	#main > #header #links a:hover {
 		background-color: #df2d98;
 		padding: 6px 1%;
 		height: 105%;
@@ -353,41 +373,46 @@
 	.projectcard {
 		display: inline-block;
 		border-radius: 8px;
-		padding: 12px;
+		/*padding: 12px;*/
 		margin: 12px 12px;
 		width: 256px;
 		height: 384px;
 		transition: 0.5s;
+		overflow: hidden;
 	}
 
 	.projectcard:hover {
-		box-shadow: 0 0 5px 1px #ff66c2a0;
-		/*transform: scale(1.1);*/
+		/*box-shadow: 0 0 5px 1px #ff66c2a0;*/
 	}
 
-	.projectcard > * {
+	.projectcard > *:not(#header) {
 		border-radius: 10px;
-		margin: 4px 0;
+		margin: 6px 10px;
+	}
+
+	.projectcard #header {
 	}
 
 	.projectcard #title {
 		font-size: 24px;
-		padding: 0px;
-		margin: 0px;
 	}
 
 	.projectcard #lang {
 		font-size: 24px;
 	}
 
-	.projectcard #links a {
-		display: block;
-		padding: 2px 4px;
-		font-size: 14px;
-		width: 0px;
-		overflow: visible;
-		white-space: nowrap;
-		transition-duration: 0.25s;
+	.projectcard #links {
+	}
+
+	.projectcard #links .fa {
+		font-size: 20px;
+		transition: inherit;
+		margin-right: 4px;
+	}
+
+	.projectcard #links .fa-github-alt {
+		position: relative;
+		bottom: 1px;
 	}
 
 	.projectcard #links a:hover {
@@ -396,8 +421,19 @@
 		width: 100%;
 	}
 
+	.projectcard #links a {
+		display: block;
+		padding: 3px 6px;
+		margin: 3px 0;
+		font-size: 14px;
+		width: 0px;
+		overflow: visible;
+		white-space: nowrap;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+	}
+
 	.projectcard #thumb {
-		margin: 8px 0px;
 		padding: 4px;
 	}
 
@@ -409,7 +445,7 @@
 		display: block;
 		font-size: 16px;
 		padding: 8px 8px;
-		float left;
+		overflow: hidden;
 	}
 
 }
