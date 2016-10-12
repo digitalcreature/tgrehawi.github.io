@@ -189,7 +189,7 @@
 }
 
 .projectcard #title {
-	color: #e1f2eb;
+	color: #f1e1f2;
 	font-weight: bold;
 	font-size: 48px;
 	padding: 0;
@@ -197,7 +197,7 @@
 }
 
 .projectcard #lang {
-	color: rgba(201, 231, 221, 0.5);
+	color: rgba(231, 201, 217, 0.65);
 	float: right;
 	font-size: 48px;
 	padding: 0;
