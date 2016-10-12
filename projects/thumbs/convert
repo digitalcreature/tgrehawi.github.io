@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#little utility script to convert gifs to mp4 for web
+
+for in in *.gif; do
+	out=${in%".gif"}".mp4"
+	if [ -f $out ]; then
+		echo "'$in' has already been converted to '$out', skipping..."
+	else
+		ffmpeg -i $in -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" $out
+	fi
+done

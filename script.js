@@ -41,7 +41,12 @@ $(document).ready(function() {
 				var lang = p.getAttribute("lang") || "";
 				var thumb = p.getAttribute("thumb");
 				thumb = thumb ?
-				`<div class="imgcontainer" id="thumb"><img src="${thumb}" alt="${repo}" title="${repo}"></div>` || "" : "";
+				`<div class="imgcontainer" id="thumb">
+					<video autoplay="autoplay" loop="loop">
+						<source src="${thumb}" type="video/mp4">
+					</video>
+				</div>`
+				|| "" : "";
 				p.innerHTML =
 				`<div id="lang">${lang}</div>
 				<div id="title">${repo}</div>

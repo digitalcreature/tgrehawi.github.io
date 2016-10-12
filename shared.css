@@ -4,6 +4,7 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	outline: 0;
 }
 
 html {
@@ -28,13 +29,13 @@ div.imgcontainer {
 	overflow: hidden;
 }
 
-div.imgcontainer img {
+div.imgcontainer * {
 	display: block;
 	border-radius: 6px;
 	width: 100%;
 	height: auto;
 	transition: inherit;
-	background-color: rgba(0, 0, 0, 0.5); 
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 div.imgcontainer:hover {
