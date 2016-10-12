@@ -197,7 +197,7 @@
 }
 
 .projectcard #lang {
-	color: #c9e7dd80;
+	color: rgba(201, 231, 221, 0.5);
 	float: right;
 	font-size: 48px;
 	padding: 0;
