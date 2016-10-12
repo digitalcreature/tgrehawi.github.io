@@ -281,7 +281,7 @@
 	#header #title {
 		right: 0.5%;
 		width: 101%;
-		text-align: left;
+		text-align: center;
 		display: block;
 		position: relative;
 		border-radius: 2px;
@@ -298,6 +298,7 @@
 		font-size: 48px;
 		font-weight: bold;
 		max-width: 100%;
+		width: auto;
 		white-space: nowrap;
 	}
 
@@ -308,16 +309,17 @@
 		font-size: 24px;
 		color: #89a69e;
 		max-width: 100%;
-		padding-left: 5%;
+		width: auto;
+		margin: 0 10%;
 		/*vertical-align: super;*/
 		white-space: nowrap;
 	}
 
 	#header #links {
-		padding: 0px 4%;
+		padding: 0px 0px;
 		font-size: 0;
 		/*overflow: hidden;*/
-		text-align: left;
+		text-align: center;
 		height: auto;
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -335,7 +337,7 @@
 		font-weight: bold;
 		color: #df2d98;
 		background-color: transparent;
-		padding: 10px 1.25%;
+		padding: 10px 1.5%;
 		height: inherit;
 		transition: 0.1s;
 		text-decoration: none;
