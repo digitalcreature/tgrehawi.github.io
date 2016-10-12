@@ -48,8 +48,8 @@
 #main > #header #title #name {
 	display: block;
 	text-align: center;
-	color: #dcf0cf;
-	font-size: 48px;
+	color: #f0cfe8;
+	font-size: 64px;
 	font-weight: bold;
 	width: 100%;
 	white-space: nowrap;
@@ -59,8 +59,8 @@
 	display: block;
 	overflow: hidden;
 	text-align: center;
-	font-size: 24px;
-	color: #89a69e;
+	font-size: 36px;
+	color: rgba(219, 190, 218, 0.68);
 	width: 100%;
 	white-space: nowrap;
 }
@@ -107,14 +107,15 @@
 
 #main .section > h1 {
 	color: #8aee25;
-	padding: 0 3%;
+	padding: 0 4%;
 	font-size: 48px;
 }
 
 #main .section > p {
-	padding: 0 4%;
+	padding: 0 6%;
 	padding-top: 8px;
 	font-size: 36px;
+	text-align: left;
 }
 
 #main > #about {
@@ -305,9 +306,7 @@
 	#main > #header #title #name {
 		display: inline-block;
 		text-align: left;
-		color: #dcf0cf;
 		font-size: 48px;
-		font-weight: bold;
 		max-width: 100%;
 		width: auto;
 		white-space: nowrap;
@@ -315,14 +314,10 @@
 
 	#main > #header #title #nouns {
 		display: inline-block;
-		overflow: hidden;
-		text-align: left;
 		font-size: 24px;
-		color: #89a69e;
 		max-width: 100%;
 		width: auto;
 		margin: 0 10%;
-		/*vertical-align: super;*/
 		white-space: nowrap;
 	}
 
@@ -366,7 +361,6 @@
 	}
 
 	#main .section > h1 {
-		color: #8aee25;
 		padding-left: 4%;
 		font-size: 32px;
 	}
