@@ -197,7 +197,7 @@
 	border-radius: 32px;
 }
 
-.projectcard #thumb img {
+.projectcard #thumb * {
 	border-radius: 16px;
 }
 
@@ -398,7 +398,7 @@
 		border-radius: 12px;
 	}
 
-	.projectcard #thumb img {
+	.projectcard #thumb * {
 		border-radius: 6px;
 	}
 
