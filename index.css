@@ -251,7 +251,7 @@
 
 .projectcard p {
 	background-color: #cca6ca;
-	color: #5a6360;
+	color: #4e444d;
 	font-size: 36px;
 	padding: 16px;
 	text-align: left;
@@ -259,7 +259,12 @@
 }
 
 .projectcard p a {
-	color: #566e66;
+	color: #8b548b;
+	text-decoration: none;
+}
+
+.projectcard p a:hover {
+	text-decoration: underline;
 }
 
 @media only screen and (min-device-width: 800px) {
