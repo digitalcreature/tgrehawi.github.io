@@ -412,7 +412,7 @@
 
 	.projectcard #links .fa-github-alt {
 		position: relative;
-		bottom: 1px;
+		bottom: 0px;
 	}
 
 	.projectcard #links a:hover {
