@@ -67,10 +67,11 @@ $(document).ready(function() {
 
 	var $menu = $("#main > #header #menu").first();
 	var menuopen = false;
-	var menuheight = (96 * 3) + "px";
+	var fullmenuheight = (96 * 6);
+	var menuheight = fullmenuheight;
 
 	function openmenu() {
-		$menu.css("max-height", menuheight);
+		$menu.css("max-height", menuheight + "px");
 		menuopen = true;
 	}
 
@@ -88,10 +89,20 @@ $(document).ready(function() {
 		}
 	}
 
-	// openmenu();
+	$(window).resize(function() {
+		var h= $(window).height();
+		if (fullmenuheight > h) {
+			menuheight = h;
+		}
+		else {
+			menuheight = fullmenuheight;
+		}
+		if ($menu.css("max-height") != "0px") {
+			$menu.css("max-height", menuheight+"px");
+		}
 
-	$('*').filter(function(){ return this.style && this.style.position === 'fixed' }).delegate("touchmove", function(event){
-		event.preventDefault();
 	});
+
+	// openmenu();
 
 });
