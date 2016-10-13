@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 	var $menu = $("#main > #header #menu").first();
 	var menuopen = false;
-	var menuheight = (72 * 6) + "px";
+	var menuheight = (96 * 6) + "px";
 
 	function openmenu() {
 		$menu.css("max-height", menuheight);
