@@ -63,11 +63,14 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#main > #header #menu").html($("#main > #header #links").html());
+
 	var $menu = $("#main > #header #menu").first();
 	var menuopen = false;
+	var menuheight = (72 * 6) + "px";
 
 	function openmenu() {
-		$menu.css("max-height", 256);
+		$menu.css("max-height", menuheight);
 		menuopen = true;
 	}
 
@@ -85,6 +88,7 @@ $(document).ready(function() {
 		}
 	}
 
+	openmenu();
 	// headerTop = $("#header").offset().top;
 	//
 	// $(window).scroll(function() {
