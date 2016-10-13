@@ -51,7 +51,7 @@
 }
 
 #main > #header #menu {
-	overflow: hidden;
+	overflow: auto;
 	height: auto;
 	max-height: 0;
 	transition: 0.5s;
@@ -387,6 +387,8 @@
 		margin-right: 3%;
 		white-space: nowrap;
 		box-shadow: none;
+		line-height: normal;
+		height: auto;
 	}
 
 	#main > #header #title #nouns {
@@ -397,7 +399,14 @@
 		margin: 0;
 		margin-left: 3%;
 		padding: 0;
+		height: auto;
 		white-space: nowrap;
+		line-height: normal;
+		background-color: transparent;
+	}
+
+	#main > #header #title #nouns:before {
+		display: none;
 	}
 
 	#main > #header #links {
@@ -440,7 +449,7 @@
 		/*transform: scale(1.1);*/
 	}
 
-	#main > .fa-bars {
+	#main > #header .fa-bars {
 		display: none;
 	}
 

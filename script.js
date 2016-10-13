@@ -87,17 +87,5 @@ $(document).ready(function() {
 			openmenu();
 		}
 	}
-
-	openmenu();
-	// headerTop = $("#header").offset().top;
-	//
-	// $(window).scroll(function() {
-	// 	var header = $("#header");
-	// 	var top = $(this).scrollTop();
-	// 	if (top > headerTop)
-	// 		header.css("top", top - headerTop);
-	// 	else
-	// 		header.css("top", 0);
-	// });
-
+	
 });
