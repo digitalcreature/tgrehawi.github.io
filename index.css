@@ -62,25 +62,24 @@
 	height: 96px;
 	line-height: 96px;
 	padding: 0 32px;
-	color: #df2d98;
+	color: #f041aa;
 	text-decoration: none;
 	transition: 0.25s;
-	background-color: #202020;
+	background-color: #121212;
 	white-space: nowrap;
 	overflow: hidden;
 	font-size: 48px;
 	font-weight: bold;
 }
 
-
 #main > #header #menu a:nth-child(odd) {
-	background-color: #252525;
+	background-color: #191919;
 }
 
 #main > #header #menu a:hover {
 	background-color: #df2d98;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
-	color: #e2c2df;
+	color: #f0d7ed;
 }
 
 #main > #header #menu .fa {
