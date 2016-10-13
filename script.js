@@ -87,5 +87,7 @@ $(document).ready(function() {
 			openmenu();
 		}
 	}
-	
+
+	// openmenu();
+
 });

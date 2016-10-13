@@ -59,16 +59,19 @@
 
 #main > #header #menu a {
 	display: block;
-	font-size: 36px;
-	color: #df2d98;
-	height: 72px;
+	height: 96px;
+	line-height: 96px;
 	padding: 0 32px;
-	line-height: 72px;
+	color: #df2d98;
 	text-decoration: none;
 	transition: 0.25s;
-	font-weight: bold;
 	background-color: #202020;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 48px;
+	font-weight: bold;
 }
+
 
 #main > #header #menu a:nth-child(odd) {
 	background-color: #252525;
@@ -81,11 +84,21 @@
 }
 
 #main > #header #menu .fa {
+	display: inline-block;
 	margin-right: 24px;
-	font-size: 40px;
-	width: 40px;
+	font-size: 64px;
+	width: 64px;
 	text-align: center;
+	position: relative;
 }
+/* yup, thats right
+i care that much */
+#main > #header #menu .fa-file-text { top: 6px; }
+#main > #header #menu .fa-github-alt { top: 3px; }
+#main > #header #menu .fa-gamepad { top: 2px; }
+#main > #header #menu .fa-twitter { top: 5px; }
+#main > #header #menu .fa-envelope { top: 3px; }
+#main > #header #menu .fa-book { top: 5px; }
 
 #main > #header #title {
 	text-align: left;
