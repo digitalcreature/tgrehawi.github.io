@@ -67,7 +67,7 @@ $(document).ready(function() {
 
 	var $menu = $("#main > #header #menu").first();
 	var menuopen = false;
-	var menuheight = (96 * 6) + "px";
+	var menuheight = (96 * 3) + "px";
 
 	function openmenu() {
 		$menu.css("max-height", menuheight);
@@ -89,5 +89,9 @@ $(document).ready(function() {
 	}
 
 	// openmenu();
+
+	$('*').filter(function(){ return this.style && this.style.position === 'fixed' }).delegate("touchmove", function(event){
+		event.preventDefault();
+	});
 
 });
