@@ -48,17 +48,19 @@ $(document).ready(function() {
 				</div>`
 				|| "" : "";
 				p.innerHTML = `
-				<div id="header">
+				<div id="header" class="bg">
 					<div id="lang">${lang}</div>
 					<div id="title">${repo}</div>
 				</div>
-				<div id="links">
-					<a target="_blank" href="http://github.com/${user}/${repo}/">
-							<i class="fa fa-github-alt fa-lg" aria-label="github page"> </i>${user}/${repo}
-					</a>
-				</div>
-				${thumb}
-				<p>${p.innerHTML}</p>`
+				<div id="body" class="bg">
+					<div id="links">
+						<a target="_blank" href="http://github.com/${user}/${repo}/">
+								<i class="fa fa-github-alt fa-lg" aria-label="github page"> </i>${user}/${repo}
+						</a>
+					</div>
+					${thumb}
+					<p>${p.innerHTML}</p>
+				</div>`
 				break;
 		}
 	});

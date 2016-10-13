@@ -246,11 +246,11 @@ i care that much */
 
 .projectcard {
 	display: block;
-	background-color: #e3cbe1;
 	text-align: left;
 	overflow: hidden;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 16px;
+	background-color: transparent;
 	/*padding: 24px;*/
 	/*padding-top: 16px;*/
 	margin: 32px 5%;
@@ -258,7 +258,7 @@ i care that much */
 	height: auto;
 }
 
-.projectcard > *:not(#header) {
+.projectcard > #body > * {
 	border-radius: 12px;
 	margin: 16px;
 }
@@ -268,6 +268,14 @@ i care that much */
 	width: 100%;
 	background-color: #964a92;
 	padding: 8px 16px;
+}
+
+.projectcard #body {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: #e3cbe1;
+	overflow: hidden;
 }
 
 .projectcard #title {
@@ -503,7 +511,11 @@ i care that much */
 		/*box-shadow: 0 0 5px 1px #ff66c2a0;*/
 	}
 
-	.projectcard > *:not(#header) {
+	.projectcard #body {
+		height: 100%;
+	}
+
+	.projectcard > #body > * {
 		border-radius: 10px;
 		margin: 6px 10px;
 	}
