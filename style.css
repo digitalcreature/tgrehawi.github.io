@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12pt; }
+  body div.sidebar {
+    background-color: #524035;
+    color: #e2cec1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20em;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10; }
+    body div.sidebar div.title {
+      padding: 0.5em 1.5em;
+      margin-top: 3em; }
+      body div.sidebar div.title h1 {
+        font-size: 3em;
+        font-weight: bold; }
+    body div.sidebar div.about {
+      padding: 0.5em 1.5em; }
+    body div.sidebar div.links {
+      text-transform: uppercase;
+      overflow: hidden;
+      color: #dbdbdb;
+      position: absolute;
+      bottom: 4em;
+      width: 100%; }
+      body div.sidebar div.links div.link {
+        display: block;
+        width: 100%;
+        height: 1.75em;
+        line-height: 1.75em;
+        font-size: 1.5em;
+        transition-duration: 0.25s; }
+        body div.sidebar div.links div.link:nth-child(even) {
+          background-color: #323030; }
+        body div.sidebar div.links div.link:nth-child(odd) {
+          background-color: #292828; }
+        body div.sidebar div.links div.link a {
+          padding-left: 1.75em;
+          color: inherit;
+          text-decoration: none;
+          display: block; }
+          body div.sidebar div.links div.link a i.fa {
+            position: absolute;
+            width: 1.75em;
+            height: 1.75em;
+            text-align: center;
+            line-height: 1.75em;
+            left: 0; }
+        body div.sidebar div.links div.link:hover {
+          color: white;
+          background-color: #3d7a4c; }
+  body div.content {
+    color: #262626;
+    display: block;
+    width: auto;
+    min-height: 100vh;
+    margin-left: 20em;
+    padding: 1.5em 3em;
+    text-align: justify;
+    background-color: #e8ddd3; }
+    body div.content * {
+      color: inherit; }
+    body div.content a {
+      color: #206134; }
+    body div.content h1 {
+      font-size: 2.5em; }
+    body div.content h2 {
+      font-size: 2em; }
+    body div.content p {
+      margin-bottom: 1em; }
+
+/*# sourceMappingURL=style.css.map */
