@@ -67,7 +67,8 @@ body {
     margin-left: 20em;
     padding: 1.5em 3em;
     text-align: justify;
-    background-color: #e8ddd3; }
+    background-color: #e8ddd3;
+    overflow: hidden; }
     body div.content * {
       color: inherit; }
     body div.content a {
