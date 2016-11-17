@@ -18,45 +18,44 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: 10; }
-    body div.sidebar div.title {
+    body div.sidebar div.container div.title {
       padding: 0.5em 1.5em;
-      margin-top: 3em; }
-      body div.sidebar div.title h1 {
+      margin-top: 10vh; }
+      body div.sidebar div.container div.title h1 {
         font-size: 3em;
         font-weight: bold; }
-    body div.sidebar div.about {
-      padding: 0.5em 1.5em; }
-    body div.sidebar div.links {
+    body div.sidebar div.container div.about {
+      padding: 0.5em 1.5em;
+      margin-bottom: 15vh; }
+    body div.sidebar div.container div.links {
       text-transform: uppercase;
       overflow: hidden;
       color: #dbdbdb;
       position: absolute;
-      bottom: 4em;
+      bottom: 8vh;
       width: 100%; }
-      body div.sidebar div.links div.link {
-        display: block;
-        width: 100%;
+      body div.sidebar div.container div.links div.link {
         height: 1.75em;
         line-height: 1.75em;
         font-size: 1.5em;
         transition-duration: 0.25s; }
-        body div.sidebar div.links div.link:nth-child(even) {
+        body div.sidebar div.container div.links div.link:nth-child(even) {
           background-color: #323030; }
-        body div.sidebar div.links div.link:nth-child(odd) {
+        body div.sidebar div.container div.links div.link:nth-child(odd) {
           background-color: #292828; }
-        body div.sidebar div.links div.link a {
+        body div.sidebar div.container div.links div.link a {
           padding-left: 1.75em;
           color: inherit;
           text-decoration: none;
           display: block; }
-          body div.sidebar div.links div.link a i.fa {
+          body div.sidebar div.container div.links div.link a i.fa {
             position: absolute;
             width: 1.75em;
             height: 1.75em;
             text-align: center;
             line-height: 1.75em;
             left: 0; }
-        body div.sidebar div.links div.link:hover {
+        body div.sidebar div.container div.links div.link:hover {
           color: white;
           background-color: #3d7a4c; }
   body div.content {
