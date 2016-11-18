@@ -16,74 +16,92 @@ $sidebar-link-hover-bg: #3d7a4c
 
 $content-bg: #e8ddd3
 
+$break-minwidth: "min-width: 700px"
+
 body
 	font-family: 'Source Sans Pro', sans-serif
-	font-size: 2.5vh
+	font-size: 14pt
+	@media (min-height: 700px)
+		font-size: 2.5vh
 
 	div.sidebar
 		background-color: $sidebar-bg
 		color: $sidebar-textcolor
-		position: fixed
-		top: 0
-		left: 0
-		width: $sidebar-width
-		height: 100%
 		overflow: hidden
-		z-index: 10
+		width: 100%
+		display: table
+		table-layout: fixed
+		@media ($break-minwidth)
+			position: fixed
+			display: block
+			top: 0
+			left: 0
+			width: $sidebar-width
+			height: 100%
+			z-index: 10
 
 		div.container
+			display: table-cell
+			overflow: hidden
+			padding: 1em 2em
+			@media ($break-minwidth)
+				display: block
+				padding-top: 5em
 
 			div.title
-				padding: 0.5em 1.5em
-				margin-top: 4em
 
 				h1
 					font-size: 3em
 					font-weight: bold
 
 			div.about
-				padding: 0.5em 1.5em
-				margin-bottom: 5em
+				padding: 1em 0
+		div.links
+			$font-size: 1.5em
+			$link-height: 1.75em
 
-			div.links
-				text-transform: uppercase
-				overflow: hidden
-				color: $sidebar-link-textcolor
+			vertical-align: top
+			display: table-cell
+			font-size: $font-size
+			text-transform: uppercase
+			overflow: hidden
+			color: $sidebar-link-textcolor
+			width: $link-height
+			background-color: $sidebar-link-bg * 1.2
+			@media ($break-minwidth)
+			@media ($break-minwidth)
+				display: block
 				position: absolute
 				bottom: 3em
 				width: 100%
 
-				div.link
-					$font-size: 1.5em
-					$height: 1.75em
+			div.link
+				height: $link-height
+				line-height: $link-height
+				transition-duration: 0.25s
+				transition-property: background-color
+				&:nth-child(even)
+					background-color: $sidebar-link-bg * 1.1
+				&:nth-child(odd)
+					background-color: $sidebar-link-bg * 0.9
 
-					height: $height
-					line-height: $height
-					font-size: $font-size
-					transition-duration: 0.25s
-					transition-property: background-color
-					&:nth-child(even)
-						background-color: $sidebar-link-bg * 1.1
-					&:nth-child(odd)
-						background-color: $sidebar-link-bg * 0.9
+				a
+					padding-left: $link-height
+					color: inherit
+					text-decoration: none
+					display: block
 
-					a
-						padding-left: $height
-						color: inherit
-						text-decoration: none
-						display: block
+					i.fa
+						position: absolute
+						width: $link-height
+						height: $link-height
+						text-align: center
+						line-height: $link-height
+						left: 0
 
-						i.fa
-							position: absolute
-							width: $height
-							height: $height
-							text-align: center
-							line-height: $height
-							left: 0
-
-					&:hover
-						color: white
-						background-color: $sidebar-link-hover-bg
+				&:hover
+					color: white
+					background-color: $sidebar-link-hover-bg
 
 	div.content
 		$textcolor: white * 0.15
@@ -92,11 +110,12 @@ body
 		display: block
 		width: auto
 		min-height: 100vh
-		margin-left: $sidebar-width
 		padding: 1.5em 3em
 		text-align: justify
 		background-color: $content-bg
 		overflow: hidden
+		@media ($break-minwidth)
+			margin-left: $sidebar-width
 
 		*
 			color: inherit
