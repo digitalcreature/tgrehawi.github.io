@@ -40,22 +40,6 @@ body
 			height: 100%
 			z-index: 10
 
-		div.container
-			display: table-cell
-			overflow: hidden
-			padding: 1em 2em
-			@media ($break-minwidth)
-				display: block
-				padding-top: 5em
-
-			div.title
-
-				h1
-					font-size: 3em
-					font-weight: bold
-
-			div.about
-				padding: 1em 0
 		div.links
 			$font-size: 1.5em
 			$link-height: 1.75em
@@ -102,6 +86,23 @@ body
 				&:hover
 					color: white
 					background-color: $sidebar-link-hover-bg
+
+		div.header
+			display: table-cell
+			overflow: hidden
+			padding: 1em 2em
+			@media ($break-minwidth)
+				display: block
+				padding-top: 5em
+
+			div.title
+
+				h1
+					font-size: 3em
+					font-weight: bold
+
+			div.about
+				padding: 1em 0
 
 	div.content
 		$textcolor: white * 0.15

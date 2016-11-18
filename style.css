@@ -27,19 +27,6 @@ body {
         width: 20em;
         height: 100%;
         z-index: 10; } }
-    body div.sidebar div.container {
-      display: table-cell;
-      overflow: hidden;
-      padding: 1em 2em; }
-      @media (min-width: 800px) {
-        body div.sidebar div.container {
-          display: block;
-          padding-top: 5em; } }
-      body div.sidebar div.container div.title h1 {
-        font-size: 3em;
-        font-weight: bold; }
-      body div.sidebar div.container div.about {
-        padding: 1em 0; }
     body div.sidebar div.links {
       vertical-align: top;
       display: table-cell;
@@ -79,6 +66,19 @@ body {
         body div.sidebar div.links div.link:hover {
           color: white;
           background-color: #3d7a4c; }
+    body div.sidebar div.header {
+      display: table-cell;
+      overflow: hidden;
+      padding: 1em 2em; }
+      @media (min-width: 800px) {
+        body div.sidebar div.header {
+          display: block;
+          padding-top: 5em; } }
+      body div.sidebar div.header div.title h1 {
+        font-size: 3em;
+        font-weight: bold; }
+      body div.sidebar div.header div.about {
+        padding: 1em 0; }
   body div.content {
     color: #262626;
     display: block;
