@@ -127,6 +127,9 @@ html
 				margin-left: $sidebar-width
 				padding: 1.5em 3em
 
+			*
+				line-height: 1.5em
+
 			a
 				color: $accent
 
@@ -139,32 +142,17 @@ html
 			p
 				margin-bottom: 1em
 
-			@mixin code-bg()
-				background-color: $primary-light * 1.1
-				border-color: $primary-light * 0.9
-				border-radius: 0.4em
-				// border-style: solid
-				border-width: 1px
-
-
 			code
 				font-size: 1em
 				font-family: $mono
-			*:not(pre)
-				code
-					padding: 0 0.2em
-					+code-bg
-
-			pre
+			*:not(pre) code
+				border-radius: 0.4em
+				padding: 0 0.25em
+				display: inline
+			pre > code
 				margin-bottom: 1em
-				overflow: auto
-				+code-bg
 				border-radius: 1em
-
-				code
-					padding: 1em
-					// height: auto
-					overflow-x: auto
-					display: block
-					border: none
-// @import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css')
+				padding: 1em
+				overflow-x: auto
+				display: block
+				border: none

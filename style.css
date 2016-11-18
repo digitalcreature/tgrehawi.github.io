@@ -94,6 +94,8 @@ html {
       html body div.content {
         margin-left: 24em;
         padding: 1.5em 3em; } }
+    html body div.content * {
+      line-height: 1.5em; }
     html body div.content a {
       color: #3d7a54; }
     html body div.content h1 {
@@ -106,23 +108,15 @@ html {
       font-size: 1em;
       font-family: "Source Code Pro", monospace; }
     html body div.content *:not(pre) code {
-      padding: 0 0.2em;
-      background-color: #fff3e8;
-      border-color: #d1c7be;
       border-radius: 0.4em;
-      border-width: 1px; }
-    html body div.content pre {
+      padding: 0 0.25em;
+      display: inline; }
+    html body div.content pre > code {
       margin-bottom: 1em;
-      overflow: auto;
-      background-color: #fff3e8;
-      border-color: #d1c7be;
-      border-radius: 0.4em;
-      border-width: 1px;
-      border-radius: 1em; }
-      html body div.content pre code {
-        padding: 1em;
-        overflow-x: auto;
-        display: block;
-        border: none; }
+      border-radius: 1em;
+      padding: 1em;
+      overflow-x: auto;
+      display: block;
+      border: none; }
 
 /*# sourceMappingURL=style.css.map */

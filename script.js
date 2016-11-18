@@ -8,6 +8,7 @@ $(document).ready(function() {
 		if (status == "success") {
 			$("div.content").html(md.render(data));
 			hljs.initHighlighting();
+			$("*:not(pre) code").addClass("hljs");
 		}
 	}, "text");
 });
