@@ -8,7 +8,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14pt; }
-  @media (min-height: 700px) {
+  @media (min-width: 800px) and (min-height: 700px) {
     body {
       font-size: 2.5vh; } }
   body div.sidebar {
@@ -18,7 +18,7 @@ body {
     width: 100%;
     display: table;
     table-layout: fixed; }
-    @media (min-width: 700px) {
+    @media (min-width: 800px) {
       body div.sidebar {
         position: fixed;
         display: block;
@@ -31,7 +31,7 @@ body {
       display: table-cell;
       overflow: hidden;
       padding: 1em 2em; }
-      @media (min-width: 700px) {
+      @media (min-width: 800px) {
         body div.sidebar div.container {
           display: block;
           padding-top: 5em; } }
@@ -49,7 +49,7 @@ body {
       color: #dbdbdb;
       width: 1.75em;
       background-color: #363535; }
-      @media (min-width: 700px) {
+      @media (min-width: 800px) {
         body div.sidebar div.links {
           display: block;
           position: absolute;
@@ -84,13 +84,14 @@ body {
     display: block;
     width: auto;
     min-height: 100vh;
-    padding: 1.5em 3em;
+    padding: 1.5em;
     text-align: justify;
     background-color: #e8ddd3;
     overflow: hidden; }
-    @media (min-width: 700px) {
+    @media (min-width: 800px) {
       body div.content {
-        margin-left: 20em; } }
+        margin-left: 20em;
+        padding: 1.5em 3em; } }
     body div.content * {
       color: inherit; }
     body div.content a {

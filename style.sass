@@ -16,12 +16,12 @@ $sidebar-link-hover-bg: #3d7a4c
 
 $content-bg: #e8ddd3
 
-$break-minwidth: "min-width: 700px"
+$break-minwidth: "min-width: 800px"
 
 body
 	font-family: 'Source Sans Pro', sans-serif
 	font-size: 14pt
-	@media (min-height: 700px)
+	@media ($break-minwidth) and (min-height: 700px)
 		font-size: 2.5vh
 
 	div.sidebar
@@ -110,12 +110,13 @@ body
 		display: block
 		width: auto
 		min-height: 100vh
-		padding: 1.5em 3em
+		padding: 1.5em
 		text-align: justify
 		background-color: $content-bg
 		overflow: hidden
 		@media ($break-minwidth)
 			margin-left: $sidebar-width
+			padding: 1.5em 3em
 
 		*
 			color: inherit
