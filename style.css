@@ -7,7 +7,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 12pt; }
+  font-size: 2.5vh; }
   body div.sidebar {
     background-color: #524035;
     color: #e2cec1;
@@ -20,25 +20,26 @@ body {
     z-index: 10; }
     body div.sidebar div.container div.title {
       padding: 0.5em 1.5em;
-      margin-top: 10vh; }
+      margin-top: 4em; }
       body div.sidebar div.container div.title h1 {
         font-size: 3em;
         font-weight: bold; }
     body div.sidebar div.container div.about {
       padding: 0.5em 1.5em;
-      margin-bottom: 15vh; }
+      margin-bottom: 5em; }
     body div.sidebar div.container div.links {
       text-transform: uppercase;
       overflow: hidden;
       color: #dbdbdb;
       position: absolute;
-      bottom: 8vh;
+      bottom: 3em;
       width: 100%; }
       body div.sidebar div.container div.links div.link {
         height: 1.75em;
         line-height: 1.75em;
         font-size: 1.5em;
-        transition-duration: 0.25s; }
+        transition-duration: 0.25s;
+        transition-property: background-color; }
         body div.sidebar div.container div.links div.link:nth-child(even) {
           background-color: #323030; }
         body div.sidebar div.container div.links div.link:nth-child(odd) {

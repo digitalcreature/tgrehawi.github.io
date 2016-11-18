@@ -18,7 +18,7 @@ $content-bg: #e8ddd3
 
 body
 	font-family: 'Source Sans Pro', sans-serif
-	font-size: 12pt
+	font-size: 2.5vh
 
 	div.sidebar
 		background-color: $sidebar-bg
@@ -35,7 +35,7 @@ body
 
 			div.title
 				padding: 0.5em 1.5em
-				margin-top: 10vh
+				margin-top: 4em
 
 				h1
 					font-size: 3em
@@ -43,14 +43,14 @@ body
 
 			div.about
 				padding: 0.5em 1.5em
-				margin-bottom: 15vh
+				margin-bottom: 5em
 
 			div.links
 				text-transform: uppercase
 				overflow: hidden
 				color: $sidebar-link-textcolor
 				position: absolute
-				bottom: 8vh
+				bottom: 3em
 				width: 100%
 
 				div.link
@@ -61,6 +61,7 @@ body
 					line-height: $height
 					font-size: $font-size
 					transition-duration: 0.25s
+					transition-property: background-color
 					&:nth-child(even)
 						background-color: $sidebar-link-bg * 1.1
 					&:nth-child(odd)
