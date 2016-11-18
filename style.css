@@ -1,86 +1,88 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   outline: 0; }
 
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 14pt; }
+html {
+  font-size: 12pt;
+  font-family: "Source Sans Pro", sans-serif; }
   @media (min-width: 800px) and (min-height: 700px) {
-    body {
-      font-size: 2.5vh; } }
-  body div.sidebar {
+    html {
+      font-size: 2vh; } }
+  html body div.sidebar {
     background-color: #524035;
-    color: #e2cec1;
+    color: #e8ddd3;
     overflow: hidden;
     width: 100%;
     display: table;
     table-layout: fixed; }
     @media (min-width: 800px) {
-      body div.sidebar {
+      html body div.sidebar {
         position: fixed;
         display: block;
         top: 0;
         left: 0;
-        width: 20em;
+        width: 24em;
         height: 100%;
         z-index: 10; } }
-    body div.sidebar div.links {
+    html body div.sidebar div.links {
       vertical-align: top;
       display: table-cell;
-      font-size: 1.5em;
+      font-size: 1.75em;
       text-transform: uppercase;
       overflow: hidden;
       color: #dbdbdb;
       width: 1.75em;
       background-color: #363535; }
       @media (min-width: 800px) {
-        body div.sidebar div.links {
+        html body div.sidebar div.links {
           display: block;
           position: absolute;
-          bottom: 3em;
+          bottom: 2em;
           width: 100%; } }
-      body div.sidebar div.links div.link {
+      html body div.sidebar div.links div.link {
         height: 1.75em;
         line-height: 1.75em;
         transition-duration: 0.25s;
         transition-property: background-color; }
-        body div.sidebar div.links div.link:nth-child(even) {
+        html body div.sidebar div.links div.link:nth-child(even) {
           background-color: #323030; }
-        body div.sidebar div.links div.link:nth-child(odd) {
+        html body div.sidebar div.links div.link:nth-child(odd) {
           background-color: #292828; }
-        body div.sidebar div.links div.link a {
+        html body div.sidebar div.links div.link a {
           padding-left: 1.75em;
           color: inherit;
           text-decoration: none;
           display: block; }
-          body div.sidebar div.links div.link a i.fa {
+          html body div.sidebar div.links div.link a i.fa {
             position: absolute;
             width: 1.75em;
             height: 1.75em;
             text-align: center;
             line-height: 1.75em;
             left: 0; }
-        body div.sidebar div.links div.link:hover {
+        html body div.sidebar div.links div.link:hover {
           color: white;
-          background-color: #3d7a4c; }
-    body div.sidebar div.header {
+          background-color: #3d7a54; }
+    html body div.sidebar div.header {
       display: table-cell;
       overflow: hidden;
       padding: 1em 2em; }
       @media (min-width: 800px) {
-        body div.sidebar div.header {
+        html body div.sidebar div.header {
           display: block;
-          padding-top: 5em; } }
-      body div.sidebar div.header div.title h1 {
-        font-size: 3em;
+          padding-top: 8em; } }
+      html body div.sidebar div.header div.title h1 {
+        font-size: 4em;
         font-weight: bold; }
-      body div.sidebar div.header div.about {
+      html body div.sidebar div.header div.about {
+        font-size: 1.2em;
         padding: 1em 0; }
-  body div.content {
-    color: #262626;
+  html body div.content {
+    color: #2d2c2c;
     display: block;
     width: auto;
     min-height: 100vh;
@@ -89,18 +91,38 @@ body {
     background-color: #e8ddd3;
     overflow: hidden; }
     @media (min-width: 800px) {
-      body div.content {
-        margin-left: 20em;
+      html body div.content {
+        margin-left: 24em;
         padding: 1.5em 3em; } }
-    body div.content * {
-      color: inherit; }
-    body div.content a {
-      color: #206134; }
-    body div.content h1 {
+    html body div.content a {
+      color: #3d7a54; }
+    html body div.content h1 {
       font-size: 2.5em; }
-    body div.content h2 {
+    html body div.content h2 {
       font-size: 2em; }
-    body div.content p {
+    html body div.content p {
       margin-bottom: 1em; }
+    html body div.content code {
+      font-size: 1em;
+      font-family: "Source Code Pro", monospace; }
+    html body div.content *:not(pre) code {
+      padding: 0 0.2em;
+      background-color: #fff3e8;
+      border-color: #d1c7be;
+      border-radius: 0.4em;
+      border-width: 1px; }
+    html body div.content pre {
+      margin-bottom: 1em;
+      overflow: auto;
+      background-color: #fff3e8;
+      border-color: #d1c7be;
+      border-radius: 0.4em;
+      border-width: 1px;
+      border-radius: 1em; }
+      html body div.content pre code {
+        padding: 1em;
+        overflow-x: auto;
+        display: block;
+        border: none; }
 
 /*# sourceMappingURL=style.css.map */

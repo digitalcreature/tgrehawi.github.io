@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro')
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro')
 
 *
 	box-sizing: border-box
@@ -6,130 +7,164 @@
 	margin: 0
 	outline: 0
 
-$sidebar-bg: #524035
-$sidebar-width: 20em
+$sans: 'Source Sans Pro', sans-serif
+$mono: 'Source Code Pro', monospace
 
-$sidebar-textcolor: #e2cec1
-$sidebar-link-bg: #2d2c2c
-$sidebar-link-textcolor: #dbdbdb
-$sidebar-link-hover-bg: #3d7a4c
+$primary: #776052
+$primary-light: #e8ddd3
+$primary-dark: #524035
 
-$content-bg: #e8ddd3
+$accent: #3d7a54
+$accent-light: #5ec374
+$accent-dark: #234539
+
+$neutral: #868686
+$neutral-light: #dbdbdb
+$neutral-dark: #2d2c2c
+
+$sidebar-width: 24em
 
 $break-minwidth: "min-width: 800px"
-
-body
-	font-family: 'Source Sans Pro', sans-serif
-	font-size: 14pt
+html
+	font-size: 12pt
+	font-family: $sans
 	@media ($break-minwidth) and (min-height: 700px)
-		font-size: 2.5vh
+		font-size: 2vh
 
-	div.sidebar
-		background-color: $sidebar-bg
-		color: $sidebar-textcolor
-		overflow: hidden
-		width: 100%
-		display: table
-		table-layout: fixed
-		@media ($break-minwidth)
-			position: fixed
-			display: block
-			top: 0
-			left: 0
-			width: $sidebar-width
-			height: 100%
-			z-index: 10
+	body
 
-		div.links
-			$font-size: 1.5em
-			$link-height: 1.75em
-
-			vertical-align: top
-			display: table-cell
-			font-size: $font-size
-			text-transform: uppercase
+		div.sidebar
+			background-color: $primary-dark
+			color: $primary-light
 			overflow: hidden
-			color: $sidebar-link-textcolor
-			width: $link-height
-			background-color: $sidebar-link-bg * 1.2
+			width: 100%
+			display: table
+			table-layout: fixed
 			@media ($break-minwidth)
-			@media ($break-minwidth)
+				position: fixed
 				display: block
-				position: absolute
-				bottom: 3em
-				width: 100%
+				top: 0
+				left: 0
+				width: $sidebar-width
+				height: 100%
+				z-index: 10
 
-			div.link
-				height: $link-height
-				line-height: $link-height
-				transition-duration: 0.25s
-				transition-property: background-color
-				&:nth-child(even)
-					background-color: $sidebar-link-bg * 1.1
-				&:nth-child(odd)
-					background-color: $sidebar-link-bg * 0.9
+			div.links
+				$font-size: 1.75em
+				$link-height: 1.75em
 
-				a
-					padding-left: $link-height
-					color: inherit
-					text-decoration: none
+				vertical-align: top
+				display: table-cell
+				font-size: $font-size
+				text-transform: uppercase
+				overflow: hidden
+				color: $neutral-light
+				width: $link-height
+				background-color: $neutral-dark * 1.2
+				@media ($break-minwidth)
 					display: block
+					position: absolute
+					bottom: 2em
+					width: 100%
 
-					i.fa
-						position: absolute
-						width: $link-height
-						height: $link-height
-						text-align: center
-						line-height: $link-height
-						left: 0
+				div.link
+					height: $link-height
+					line-height: $link-height
+					transition-duration: 0.25s
+					transition-property: background-color
+					&:nth-child(even)
+						background-color: $neutral-dark * 1.1
+					&:nth-child(odd)
+						background-color: $neutral-dark * 0.9
 
-				&:hover
-					color: white
-					background-color: $sidebar-link-hover-bg
+					a
+						padding-left: $link-height
+						color: inherit
+						text-decoration: none
+						display: block
 
-		div.header
-			display: table-cell
+						i.fa
+							position: absolute
+							width: $link-height
+							height: $link-height
+							text-align: center
+							line-height: $link-height
+							left: 0
+
+					&:hover
+						color: white
+						background-color: $accent
+
+			div.header
+				display: table-cell
+				overflow: hidden
+				padding: 1em 2em
+				@media ($break-minwidth)
+					display: block
+					padding-top: 8em
+
+				div.title
+
+					h1
+						font-size: 4em
+						font-weight: bold
+
+				div.about
+					font-size: 1.2em
+					padding: 1em 0
+
+		div.content
+
+			color: $neutral-dark
+			display: block
+			width: auto
+			min-height: 100vh
+			padding: 1.5em
+			text-align: justify
+			background-color: $primary-light
 			overflow: hidden
-			padding: 1em 2em
 			@media ($break-minwidth)
-				display: block
-				padding-top: 5em
+				margin-left: $sidebar-width
+				padding: 1.5em 3em
 
-			div.title
+			a
+				color: $accent
 
-				h1
-					font-size: 3em
-					font-weight: bold
+			h1
+				font-size: 2.5em
 
-			div.about
-				padding: 1em 0
+			h2
+				font-size: 2em
 
-	div.content
-		$textcolor: white * 0.15
+			p
+				margin-bottom: 1em
 
-		color: $textcolor
-		display: block
-		width: auto
-		min-height: 100vh
-		padding: 1.5em
-		text-align: justify
-		background-color: $content-bg
-		overflow: hidden
-		@media ($break-minwidth)
-			margin-left: $sidebar-width
-			padding: 1.5em 3em
+			@mixin code-bg()
+				background-color: $primary-light * 1.1
+				border-color: $primary-light * 0.9
+				border-radius: 0.4em
+				// border-style: solid
+				border-width: 1px
 
-		*
-			color: inherit
 
-		a
-			color: #206134
+			code
+				font-size: 1em
+				font-family: $mono
+			*:not(pre)
+				code
+					padding: 0 0.2em
+					+code-bg
 
-		h1
-			font-size: 2.5em
+			pre
+				margin-bottom: 1em
+				overflow: auto
+				+code-bg
+				border-radius: 1em
 
-		h2
-			font-size: 2em
-
-		p
-			margin-bottom: 1em
+				code
+					padding: 1em
+					// height: auto
+					overflow-x: auto
+					display: block
+					border: none
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css')
