@@ -9,6 +9,7 @@ $(document).ready(function() {
 			$("div.content").html(md.render(data));
 			hljs.initHighlighting();
 			$("*:not(pre) code").addClass("hljs");
+			$("pre > code").parent("pre").addClass("code hljs");
 		}
 	}, "text");
 });

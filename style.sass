@@ -26,7 +26,7 @@ $sidebar-width: 20em
 
 $break-minwidth: "min-width: 800px"
 html
-	font-size: 12pt
+	font-size: 14pt
 	font-family: $sans
 	@media ($break-minwidth)
 		font-size: 3vh
@@ -149,10 +149,12 @@ html
 				border-radius: 0.4em
 				padding: 0 0.25em
 				display: inline
-			pre > code
+			pre.code
 				margin-bottom: 1em
 				border-radius: 1em
 				padding: 1em
+			pre > code
+				padding: 0
 				overflow-x: auto
 				display: block
 				border: none
