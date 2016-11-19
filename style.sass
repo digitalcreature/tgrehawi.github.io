@@ -22,14 +22,14 @@ $neutral: #868686
 $neutral-light: #dbdbdb
 $neutral-dark: #2d2c2c
 
-$sidebar-width: 24em
+$sidebar-width: 20em
 
 $break-minwidth: "min-width: 800px"
 html
 	font-size: 12pt
 	font-family: $sans
-	@media ($break-minwidth) and (min-height: 700px)
-		font-size: 2vh
+	@media ($break-minwidth)
+		font-size: 3vh
 
 	body
 
@@ -50,8 +50,8 @@ html
 				z-index: 10
 
 			div.links
-				$font-size: 1.75em
-				$link-height: 1.75em
+				$font-size: 1.5em
+				$link-height: 1.5em
 
 				vertical-align: top
 				display: table-cell
@@ -98,19 +98,19 @@ html
 			div.header
 				display: table-cell
 				overflow: hidden
-				padding: 1em 2em
+				padding: 1em
 				@media ($break-minwidth)
 					display: block
-					padding-top: 8em
+					padding-top: 4em
 
 				div.title
 
 					h1
-						font-size: 4em
+						font-size: 3em
 						font-weight: bold
 
 				div.about
-					font-size: 1.2em
+					font-size: 1em
 					padding: 1em 0
 
 		div.content

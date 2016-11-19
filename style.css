@@ -9,9 +9,9 @@
 html {
   font-size: 12pt;
   font-family: "Source Sans Pro", sans-serif; }
-  @media (min-width: 800px) and (min-height: 700px) {
+  @media (min-width: 800px) {
     html {
-      font-size: 2vh; } }
+      font-size: 3vh; } }
   html body div.sidebar {
     background-color: #524035;
     color: #e8ddd3;
@@ -25,17 +25,17 @@ html {
         display: block;
         top: 0;
         left: 0;
-        width: 24em;
+        width: 20em;
         height: 100%;
         z-index: 10; } }
     html body div.sidebar div.links {
       vertical-align: top;
       display: table-cell;
-      font-size: 1.75em;
+      font-size: 1.5em;
       text-transform: uppercase;
       overflow: hidden;
       color: #dbdbdb;
-      width: 1.75em;
+      width: 1.5em;
       background-color: #363535; }
       @media (min-width: 800px) {
         html body div.sidebar div.links {
@@ -44,8 +44,8 @@ html {
           bottom: 2em;
           width: 100%; } }
       html body div.sidebar div.links div.link {
-        height: 1.75em;
-        line-height: 1.75em;
+        height: 1.5em;
+        line-height: 1.5em;
         transition-duration: 0.25s;
         transition-property: background-color; }
         html body div.sidebar div.links div.link:nth-child(even) {
@@ -53,16 +53,16 @@ html {
         html body div.sidebar div.links div.link:nth-child(odd) {
           background-color: #292828; }
         html body div.sidebar div.links div.link a {
-          padding-left: 1.75em;
+          padding-left: 1.5em;
           color: inherit;
           text-decoration: none;
           display: block; }
           html body div.sidebar div.links div.link a i.fa {
             position: absolute;
-            width: 1.75em;
-            height: 1.75em;
+            width: 1.5em;
+            height: 1.5em;
             text-align: center;
-            line-height: 1.75em;
+            line-height: 1.5em;
             left: 0; }
         html body div.sidebar div.links div.link:hover {
           color: white;
@@ -70,16 +70,16 @@ html {
     html body div.sidebar div.header {
       display: table-cell;
       overflow: hidden;
-      padding: 1em 2em; }
+      padding: 1em; }
       @media (min-width: 800px) {
         html body div.sidebar div.header {
           display: block;
-          padding-top: 8em; } }
+          padding-top: 4em; } }
       html body div.sidebar div.header div.title h1 {
-        font-size: 4em;
+        font-size: 3em;
         font-weight: bold; }
       html body div.sidebar div.header div.about {
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 1em 0; }
   html body div.content {
     color: #2d2c2c;
@@ -92,7 +92,7 @@ html {
     overflow: hidden; }
     @media (min-width: 800px) {
       html body div.content {
-        margin-left: 24em;
+        margin-left: 20em;
         padding: 1.5em 3em; } }
     html body div.content * {
       line-height: 1.5em; }
