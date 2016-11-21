@@ -9,9 +9,6 @@
 html {
   font-size: 14pt;
   font-family: "Source Sans Pro", sans-serif; }
-  @media (min-width: 800px) {
-    html {
-      font-size: 3vh; } }
   html body div.sidebar {
     background-color: #524035;
     color: #e8ddd3;
@@ -21,11 +18,14 @@ html {
     table-layout: fixed; }
     @media (min-width: 800px) {
       html body div.sidebar {
+        font-size: 3vh; } }
+    @media (min-width: 800px) {
+      html body div.sidebar {
         position: fixed;
         display: block;
         top: 0;
         left: 0;
-        width: 20em;
+        width: 60vh;
         height: 100%;
         z-index: 10; } }
     html body div.sidebar div.links {
@@ -92,7 +92,7 @@ html {
     overflow: hidden; }
     @media (min-width: 800px) {
       html body div.content {
-        margin-left: 20em;
+        margin-left: 60vh;
         padding: 1.5em 3em; } }
     html body div.content * {
       line-height: 1.5em; }

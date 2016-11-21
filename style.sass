@@ -22,18 +22,18 @@ $neutral: #868686
 $neutral-light: #dbdbdb
 $neutral-dark: #2d2c2c
 
-$sidebar-width: 20em
+$sidebar-width: 60vh
 
 $break-minwidth: "min-width: 800px"
 html
 	font-size: 14pt
 	font-family: $sans
-	@media ($break-minwidth)
-		font-size: 3vh
 
 	body
 
 		div.sidebar
+			@media ($break-minwidth)
+				font-size: 3vh
 			background-color: $primary-dark
 			color: $primary-light
 			overflow: hidden
